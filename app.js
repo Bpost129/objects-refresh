@@ -8,5 +8,19 @@ const game = {
 game.rating = 'M'
 
 
-console.log(game)
+// console.log(game)
 
+
+const voteArr = ['yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'yes', 'no', 'no']
+
+function voteTallyDot(arr) {
+  let results = {}
+
+  arr.forEach(x => {
+    results[x] ? results[x]++ : results[x] = 1
+  })
+
+  return results
+}
+
+console.log(voteTallyDot(voteArr))
