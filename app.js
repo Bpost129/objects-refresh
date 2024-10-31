@@ -8,7 +8,7 @@ const game = {
 game.rating = 'M'
 
 
-// console.log(game)
+console.log(Object.keys(game))
 
 
 const voteArr = ['yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'yes', 'no', 'no']
@@ -23,4 +23,4 @@ function voteTallyDot(arr) {
   return results
 }
 
-console.log(voteTallyDot(voteArr))
+// console.log(voteTallyDot(voteArr))
